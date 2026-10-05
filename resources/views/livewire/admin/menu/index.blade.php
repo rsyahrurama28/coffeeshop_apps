@@ -5,7 +5,7 @@
     <div class="page-header"
         style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:0;">
         <div>
-            <h1 class="page-title">MANA<span class="accent">JEMEN</span> MENU</h1>
+            <h1 class="page-title">Makakkaa<span class="accent">JEMEN</span> MENU</h1>
             <p class="page-subtitle">Kelola menu & add-ons Warso Coffee</p>
         </div>
 
