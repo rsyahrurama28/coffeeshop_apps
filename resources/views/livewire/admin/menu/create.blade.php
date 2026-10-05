@@ -12,7 +12,7 @@
                     <polyline points="12 19 5 12 12 5" />
                 </svg>
             </a>
-            <h1 class="page-title">TAMBAHhahahahha <span class="accent">MENU</span></h1>
+            <h1 class="page-title">Tempetahu <span class="accent">MENU</span></h1>
         </div>
         <p class="page-subtitle">Tambahkan menu baru ke katalog</p>
     </div>
