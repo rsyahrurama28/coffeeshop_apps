@@ -333,6 +333,10 @@
                     </div>
                 @endforeach
             </div>
+
+            <div style="margin-top:24px;">
+                {{ $orders->links() }}
+            </div>
         @endif
 
     </div>{{-- end .page-content --}}

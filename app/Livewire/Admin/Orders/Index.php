@@ -3,10 +3,13 @@
 namespace App\Livewire\Admin\Orders;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\Order;
 
 class Index extends Component
 {
+    use WithPagination;
+
     public string $filterStatus = 'all';
     public ?int $latestOrderId = null;
 
@@ -37,6 +40,7 @@ class Index extends Component
     public function setFilter(string $status)
     {
         $this->filterStatus = $status;
+        $this->resetPage();
     }
 
     public function getOrdersProperty()
@@ -44,8 +48,9 @@ class Index extends Component
         return Order::with(['table', 'items.menu', 'items.addons.addOn'])
             ->where('payment_status', 'Paid')
             ->when($this->filterStatus !== 'all', fn($q) => $q->where('order_status', ucfirst($this->filterStatus)))
+            ->orderByRaw("FIELD(order_status, 'Pending', 'Processing', 'Completed')")
             ->latest()
-            ->get();
+            ->paginate(12);
     }
 
     public function getCounts(): array
