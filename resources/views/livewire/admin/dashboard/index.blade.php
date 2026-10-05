@@ -159,7 +159,7 @@
                         COFFEE</span>
                 </div>
                 <h1 class="page-title">
-                    TEST DASH<span class="accent">BOARD</span>
+                    DASH<span class="accent">BOARD</span>
                 </h1>
                 <p class="page-subtitle">Analytics & Revenue Overview — {{ now()->format('D, d M Y') }}</p>
             </div>
