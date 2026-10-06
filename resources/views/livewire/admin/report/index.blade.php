@@ -3,7 +3,7 @@
     <div class="page-header"
         style="display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
         <div>
-            <h1 class="page-title">LAPO<span class="accent">RAN</span></h1>
+            <h1 class="page-title">LAPO<span class="accent">RAN PENJUALAN</span></h1>
             <p class="page-subtitle">Rekap & analisis penjualan Warso Coffee</p>
         </div>
 
